@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benjamín Aros Báez · Full Stack Developer & QA Automation Engineer</title>
+<meta name="description" content="Portfolio of Benjamín Aros Báez: full-stack development and QA automation with Python and TypeScript. Projects, experience and contact.">
+<style>
+  :root {
+    --bg: #fafaf7;
+    --fg: #1c1c1a;
+    --muted: #5d5d57;
+    --line: #e2e1da;
+    --accent: #1d4ed8;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141413;
+      --fg: #ecebe6;
+      --muted: #a3a29a;
+      --line: #2e2e2b;
+      --accent: #8ab4ff;
+      --card: #1b1b1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 80px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 {
+    font-size: .85rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  h3 { font-size: 1.05rem; margin: 0 0 4px; }
+  a { color: var(--accent); }
+  .role { color: var(--muted); font-size: 1.1rem; margin: 0 0 20px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0; padding: 0; list-style: none; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .card p { margin: 6px 0 0; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 0 0 6px; }
+  .tags { margin-top: 10px; font-size: .85rem; color: var(--muted); }
+  ul.plain { margin: 8px 0 0; padding-left: 20px; }
+  ul.plain li { margin-bottom: 4px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Benjamín Aros Báez</h1>
+    <p class="role">Full Stack Developer · QA Automation Engineer</p>
+    <p>
+      Software engineer with a QA background and full-stack experience, focused on
+      automation and AI. I build web apps, backend services and REST APIs with Python and
+      TypeScript, and I test them: end-to-end, API and regression testing, with CI/CD
+      pipelines that block broken deploys. Civil Engineer in Telematics (UTFSM, Chile).
+      English B2–C1.
+    </p>
+    <ul class="links">
+      <li><a href="https://github.com/b0ir">GitHub</a></li>
+      <li><a href="https://www.getonbrd.com/p/benjamin-aros-baez">Get on Board profile</a></li>
+    </ul>
+  </header>
+
+  <h2>Projects</h2>
+
+  <article class="card">
+    <h3><a href="https://github.com/b0ir/visual-lens">visual-lens</a></h3>
+    <p class="meta">Open source · Python, TypeScript</p>
+    <p>
+      Autonomous visual testing agent. It crawls a site across browsers with Playwright
+      and uses vision LLMs to analyze the UI and catch visual regressions. FastAPI service.
+    </p>
+    <p class="tags">FastAPI · Playwright · Vision LLMs · UI testing</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://github.com/b0ir/prompt-evaluator">prompt-evaluator</a></h3>
+    <p class="meta">Open source · Python</p>
+    <p>
+      FastAPI service that analyzes a prompt's structure, tests its outputs and rewrites it.
+      Works with multiple model providers through LiteLLM.
+    </p>
+    <p class="tags">FastAPI · LiteLLM · Prompt testing</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://github.com/b0ir/music-intel">music-intel</a></h3>
+    <p class="meta">Open source · Python · in development</p>
+    <p>
+      Searches an artist and gathers data from Spotify, MusicBrainz, Last.fm and Discogs in
+      parallel into DuckDB. It flags conflicts between sources, generates an AI report and
+      lets you chat over the data. Gradio UI, CSV/JSON export, CI.
+    </p>
+    <p class="tags">Python · DuckDB · Gradio · Multi-provider AI</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://github.com/b0ir/user-management-app-qa">user-management-app-qa</a></h3>
+    <p class="meta">Open source · TypeScript · demo</p>
+    <p>
+      Simple user management web app built as a demo for QA work: a small React and
+      TypeScript app to practice and show testing.
+    </p>
+    <p class="tags">React · TypeScript · QA</p>
+  </article>
+
+  <h2>Experience</h2>
+
+  <article class="card">
+    <h3>Clay (fintech) · QA Developer</h3>
+    <p class="meta">Jul 2025 – Mar 2026</p>
+    <ul class="plain">
+      <li>Only QA at the company, in a role that did not exist before I joined. Manual and automated testing, defects managed in Linear and Jira with evidence and reproduction steps.</li>
+      <li>Redesigned a flaky Cypress suite into 30 independent tests, tripling coverage.</li>
+      <li>Built a GitHub Actions CI/CD pipeline that ran tests before every deploy and blocked regressions.</li>
+      <li>Reviewed every PR from the team. Developed in TypeScript on a Meteor.js and MongoDB app.</li>
+      <li>Refactored the legacy Jade templates to HTML, which unblocked a stalled Meteor 2 to 3 migration. Updated legacy dependencies and cut deploy time by about 30%.</li>
+      <li>Led the adoption of Claude Code in a team of 8 developers.</li>
+    </ul>
+  </article>
+
+  <article class="card">
+    <h3>Thesis project · Viña Errázuriz</h3>
+    <p class="meta">Mar – Dec 2024 · team of 4 (2 telematics and 2 industrial engineers)</p>
+    <p>
+      Web app used in production during the grape harvest to follow the grape reception
+      process. We gathered requirements directly with the head winemaker and validated the
+      app with the team in the field.
+    </p>
+    <p class="tags">React · TypeScript · FastAPI · MongoDB · JWT · Docker · PyTest</p>
+  </article>
+
+  <article class="card">
+    <h3>Alloxentric · DevOps Intern</h3>
+    <p class="meta">Apr – Jul 2023</p>
+    <p>
+      CI/CD pipelines with GitHub Actions and pre-commit hooks, SonarQube for automated
+      security and code-quality checks, FastAPI endpoints, and Docker deployments on AWS EC2.
+    </p>
+  </article>
+
+  <h2>Skills</h2>
+  <p>
+    <strong>Languages:</strong> Python, TypeScript, JavaScript, SQL<br>
+    <strong>Web and APIs:</strong> React, Node.js, FastAPI, REST, JWT<br>
+    <strong>Testing:</strong> Cypress, Playwright, PyTest, Postman, end-to-end, API and manual testing<br>
+    <strong>DevOps:</strong> GitHub Actions, Docker, AWS (EC2, S3, CloudWatch), SonarQube, Git<br>
+    <strong>Databases:</strong> MongoDB, PostgreSQL<br>
+    <strong>AI:</strong> Claude Code, coding agents with skills and MCP, LLM automations
+  </p>
+
+  <h2>Education</h2>
+  <p>
+    Civil Engineer in Telematics, Universidad Técnica Federico Santa María, Valparaíso, Chile.<br>
+    Anthropic certifications (2026): Introduction to Agent Skills · Building with the Claude API · Claude Code in Action · Introduction to Model Context Protocol
+  </p>
+
+  <footer>Benjamín Aros Báez</footer>
+</main>
+</body>
+</html>
